@@ -1,0 +1,33 @@
+const { type } = require('express/lib/response');
+const schema = require('mongoose');
+const  model = require('mongoose');
+const registroSchema = new schema.Schema({
+
+    nombre:{
+        type: String,
+        require: true
+    },
+    email:{
+        type: String,
+        require: true
+    },
+    telefono:{
+        type: String,
+        require: true
+    },
+    puesto:{
+        type: String,
+        require: true
+    },
+    empresa:{
+        type: String,
+        require: true
+    },
+    mensaje:{
+        type: String,
+        require: true
+    }
+})
+
+const datos = schema.model ('datos', registroSchema);
+module.exports = datos;

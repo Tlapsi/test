@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="./main.component.css">
+
+<body>
+    <div class="container">
+        <div class="fondo">
+            <div class="boxh">
+                <h2>Bienvenidos</h2>
+                <h3>Hacemos los <br> datos fáciles <br> de usar</h3>
+            </div>
+        </div>
+    </div>
+    <div class="groupb">
+        <div class="boxb">
+            <h4 >QUE REALIZAMOS</h4>
+            <h2>Contribuimos con su empresa para <br> mejorar la toma de decisiones a través <br> de sus datos.</h2>
+            <div class="btnleft">
+                <button>Más información</button>
+            </div>
+        </div>
+    </div>
+    <div class="groupb2">
+        <div>
+            <img class="imgsL" src="/assets/gente.jpg">
+        </div>
+        <div class="pmiddle">
+            <h4 s>LA MANERA IDEAL PARA MANEJAR TUS DATOS</h4>
+            <h2>Somos el socio estratégico que necesitas para <br> potenciar los datos de tu organización.
+                <br> Contamos con más de 15 años de experiencia <br>brindando soluciones innovadoras, adaptadas a<br>
+                las necesidades de nuestros clientes, en más de <br>10 industrias y diferentes áreas funcionales.
+            </h2>
+        </div>
+        <div>
+            <img class="imgsR" src="/assets/group.jpg">
+        </div>
+    </div>
+
+    <google-map height="400px" width="750px" [center]="position">
+        <map-marker [position]="position" [label]="label"></map-marker>
+    </google-map>
+
+    <footer>
+        <div class="groupf">
+            <div class="box">
+                <h2>Turing Inteligencia Artificial</h2>
+                <h3>Av. Insurgentes 601 Col. Nápoles, Benito Juárez
+                    Ciudad de México, México</h3>
+            </div>
+            <div class="box">
+                <h2>Mapa de sitio</h2>
+                <ol class="letra">
+                    <li type="circle"><a [routerLink]="['']">Inicio</a></li>
+                    <li type="circle"><a [routerLink]="['Nosotros']">Nosotros</a></li>
+                    <li type="circle"><a [routerLink]="['Servicios']">Servicios</a></li>
+                    <li type="circle"><a [routerLink]="['Tableau']">Tableau</a></li>
+                </ol>
+            </div>
+            <div class="box">
+
+
+            </div>
+        </div>
+
+    </footer>
+</body>

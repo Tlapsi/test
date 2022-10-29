@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="navbar.component.css">
+<div class = "container">
+    <div class="fondo">
+        <header>
+            <h1 >
+                <a href="#"[routerLink]="['']" style="text-decoration: none; color: white;"> TURING-IA</a>
+            </h1>
+            <nav appScroll>
+                <a href="#"[routerLink]="['']">Inicio</a>
+                <a href="#" [routerLink]="['Nosotros']">Nosotros</a>
+                    <div  class="dropdown">
+                        <button class="dropbtn"[routerLink]="['Servicios']">Servicios
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Business Analyst</a>
+                            <a href="#">Workshop</a>
+                            <a href="#">Capacitación</a>
+                            <a href="#">Venta de Software</a>
+                            <a href="#">Hardware</a>
+                            <a href="#">Desarrollo de Software</a>
+                            <a href="#">Balanced Scorecard</a>
+                        </div>
+                    </div>
+                    <div  class="dropdown">
+                        <button class="dropbtn" [routerLink]="['Tableau']">Tableau
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Desktop</a>
+                            <a href="#">Prep</a>
+                            <a href="#">Cloud</a>
+                            <a href="#">Server</a>
+                            <a href="#">Server Management</a>
+                            <a href="#">Data Management</a>
+                        </div>
+                    </div>
+                    <a href="#" [routerLink]="['Portal']">Portal</a>
+                    <a href="#"[routerLink]="['Blog']">Blog</a>
+                    <a href="#" [routerLink]="['Contacto']">Contacto</a>
+                </nav>
+            </header>            
+    </div>
+</div>
+<script src="./sticky.js"></script>
